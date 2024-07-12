@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 0 0 10px rgb(255, 102, 0);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: "";
+    background-image: conic-gradient(#707070, #707070, #e7f2fd, #e7f2fd);
+    position: absolute;
+    height: 2500px;
+    width: 2500px;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    perspective: 1000px;
+}
+
+footer a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
